@@ -14,11 +14,13 @@ namespace Puppet3
     {
         private static Microphone microphone;
         private static SoundPlayer soundPlayer;
+        private static ApplicationSound applicationSound;
 
-        public MascotForm(Microphone mic, SoundPlayer sound)
+        public MascotForm(Microphone mic, SoundPlayer sound, ApplicationSound appSound)
         {
             microphone = mic;
             soundPlayer = sound;
+            applicationSound = appSound;
             InitializeComponent();
             Preprocess();
             Motion();

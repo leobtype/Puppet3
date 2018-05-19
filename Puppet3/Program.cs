@@ -17,10 +17,11 @@ namespace Puppet3
             UserFiles.SetupUserDirectories();
             SoundPlayer soundPlayer = new SoundPlayer();
             Microphone microphone = new Microphone();
+            ApplicationSound appSound = new ApplicationSound();
             microphone.Setup();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MascotForm(microphone, soundPlayer));
+            Application.Run(new MascotForm(microphone, soundPlayer, appSound));
         }
     }
 }

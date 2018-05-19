@@ -303,5 +303,29 @@ namespace Puppet3.Properties {
                 this["LocationInitialized"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ApplicationSoundName {
+            get {
+                return ((string)(this["ApplicationSoundName"]));
+            }
+            set {
+                this["ApplicationSoundName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("20")]
+        public int ApplicationSoundLevelThreshold {
+            get {
+                return ((int)(this["ApplicationSoundLevelThreshold"]));
+            }
+            set {
+                this["ApplicationSoundLevelThreshold"] = value;
+            }
+        }
     }
 }
