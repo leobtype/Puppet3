@@ -23,7 +23,11 @@ namespace Puppet3
                 pictureBox25, pictureBox26, pictureBox27, pictureBox28,
                 pictureBox29, pictureBox30, pictureBox31, pictureBox32,
                 pictureBox33, pictureBox34, pictureBox35, pictureBox36,
-                pictureBox37, pictureBox38, pictureBox39, pictureBox40
+                pictureBox37, pictureBox38, pictureBox39, pictureBox40,
+                // pictureBox41 to pictureBox50 for background
+                pictureBox41, pictureBox42, pictureBox43, pictureBox44,
+                pictureBox45, pictureBox46, pictureBox47, pictureBox48,
+                pictureBox49, pictureBox50
             };
             pictureBoxes.AddRange(list);
         }

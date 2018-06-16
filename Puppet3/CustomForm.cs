@@ -73,25 +73,29 @@ namespace Puppet3
 
         private void CustomForm_Load(object sender, EventArgs e)
         {
-            int i = 0;
-            foreach(PictureBox pictureBox in pictureBoxes)
+            for (int i = 0; i < 40; i++)
             {
                 if (File.Exists(CustomPictures.FullPath[i]))
                 {
-                    InitializePictureBox(pictureBox, CustomPictures.FullPath[i]);
+                    InitializePictureBox(pictureBoxes[i], CustomPictures.FullPath[i]);
                     InitializeButtonText(pictureButtons[i]);
                 }
-                i++;
             }
-            i = 0;
-            foreach(SoundPlayer soundPlayer in soundPlayers)
+            for (int i = 0; i < 10; i++)
+            {
+                if (File.Exists(CustomBackground.FullPath[i]))
+                {
+                    InitializePictureBox(pictureBoxes[i+40], CustomBackground.FullPath[i]);
+                    InitializeButtonText(pictureButtons[i+40]);
+                }
+            }
+            for (int i = 0; i < 10; i++)
             {
                 if (File.Exists(CustomSounds.FullPath[i]))
                 {
                     soundPlayButtons[i].Enabled = true;
                     soundTrackBars[i].Enabled = true;
                 }
-                i++;
             }
         }
 

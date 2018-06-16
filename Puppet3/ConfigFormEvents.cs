@@ -50,7 +50,16 @@ namespace Puppet3
         private void ComboBox1_SelectedValueChanged(object sender, EventArgs e)
         {
             microphone.Stop();
-            microphone.DeviceNumber = comboBox1.SelectedIndex;
+            foreach (var mic in microphone.GetMicrophoneInfo())
+            {
+                if (mic[1] == comboBox1.SelectedText)
+                {
+                    microphone.MicrophoneId = mic[0];
+                    Properties.Settings.Default.MicrophoneDeviceId = mic[0];
+                    break;
+                }
+            }
+            //microphone.DeviceNumber = comboBox1.SelectedIndex;
             microphone.Start();
         }
 
@@ -67,6 +76,7 @@ namespace Puppet3
         private void TrackBar3_ValueChanged(object sender, EventArgs e)
         {
             microphone.VolumeLevelThreshold = trackBar3.Value;
+            Properties.Settings.Default.MicrophoneVolumeLevelThreshold = trackBar3.Value;
         }
 
         private void NumericUpDown1_ValueChanged(Object sender, EventArgs e)

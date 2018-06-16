@@ -15,10 +15,12 @@ namespace Puppet3
         static void Main()
         {
             UserFiles.SetupUserDirectories();
+            Properties.Settings.Default.SoundSource = "Microphone";
             SoundPlayer soundPlayer = new SoundPlayer();
-            Microphone microphone = new Microphone();
+            //Microphone microphone = new Microphone();
+            Microphone2 microphone = new Microphone2();
             ApplicationSound appSound = new ApplicationSound();
-            microphone.Setup();
+            //microphone.Setup();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MascotForm(microphone, soundPlayer, appSound));
