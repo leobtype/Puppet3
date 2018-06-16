@@ -16,7 +16,16 @@ namespace Puppet3
         {
             PictureBox pictureBox = pictureBoxes[pictureNumber];
             Button button = pictureButtons[pictureNumber];
-            string file = CustomPictures.FullPath[pictureNumber];
+            string file;
+            if (pictureNumber < 40)
+            {
+                file = CustomPictures.FullPath[pictureNumber];
+            }
+            else
+            {
+                file = CustomBackground.FullPath[pictureNumber - 40];
+            }
+            
 
             if (pictureBox.Image != null)
             {
@@ -373,6 +382,57 @@ namespace Puppet3
         {
             int volumeLevel = Properties.Settings.Default.SoundVolumeLevel0;
             Button_MouseClickPlaySound(9, volumeLevel);
+        }
+
+        // Button61 to Button70 for background
+        private void Button61_MouseClick(object sender, MouseEventArgs e)
+        {
+            Button_MouseClick(40);
+        }
+
+        private void Button62_MouseClick(object sender, MouseEventArgs e)
+        {
+            Button_MouseClick(41);
+        }
+
+        private void Button63_MouseClick(object sender, MouseEventArgs e)
+        {
+            Button_MouseClick(42);
+        }
+
+        private void Button64_MouseClick(object sender, MouseEventArgs e)
+        {
+            Button_MouseClick(43);
+        }
+
+        private void Button65_MouseClick(object sender, MouseEventArgs e)
+        {
+            Button_MouseClick(44);
+        }
+
+        private void Button66_MouseClick(object sender, MouseEventArgs e)
+        {
+            Button_MouseClick(45);
+        }
+
+        private void Button67_MouseClick(object sender, MouseEventArgs e)
+        {
+            Button_MouseClick(46);
+        }
+
+        private void Button68_MouseClick(object sender, MouseEventArgs e)
+        {
+            Button_MouseClick(47);
+        }
+
+        private void Button69_MouseClick(object sender, MouseEventArgs e)
+        {
+            Button_MouseClick(48);
+        }
+
+        private void Button70_MouseClick(object sender, MouseEventArgs e)
+        {
+            Button_MouseClick(49);
         }
 
     }

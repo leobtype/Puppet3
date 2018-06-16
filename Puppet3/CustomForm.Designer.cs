@@ -209,6 +209,36 @@
             this.groupBox50 = new System.Windows.Forms.GroupBox();
             this.button55 = new System.Windows.Forms.Button();
             this.pictureBox37 = new System.Windows.Forms.PictureBox();
+            this.groupBox51 = new System.Windows.Forms.GroupBox();
+            this.button61 = new System.Windows.Forms.Button();
+            this.pictureBox41 = new System.Windows.Forms.PictureBox();
+            this.groupBox52 = new System.Windows.Forms.GroupBox();
+            this.button62 = new System.Windows.Forms.Button();
+            this.pictureBox42 = new System.Windows.Forms.PictureBox();
+            this.groupBox53 = new System.Windows.Forms.GroupBox();
+            this.button63 = new System.Windows.Forms.Button();
+            this.pictureBox43 = new System.Windows.Forms.PictureBox();
+            this.groupBox54 = new System.Windows.Forms.GroupBox();
+            this.button64 = new System.Windows.Forms.Button();
+            this.pictureBox44 = new System.Windows.Forms.PictureBox();
+            this.groupBox55 = new System.Windows.Forms.GroupBox();
+            this.button65 = new System.Windows.Forms.Button();
+            this.pictureBox45 = new System.Windows.Forms.PictureBox();
+            this.groupBox56 = new System.Windows.Forms.GroupBox();
+            this.button66 = new System.Windows.Forms.Button();
+            this.pictureBox46 = new System.Windows.Forms.PictureBox();
+            this.groupBox57 = new System.Windows.Forms.GroupBox();
+            this.button67 = new System.Windows.Forms.Button();
+            this.pictureBox47 = new System.Windows.Forms.PictureBox();
+            this.groupBox58 = new System.Windows.Forms.GroupBox();
+            this.button68 = new System.Windows.Forms.Button();
+            this.pictureBox48 = new System.Windows.Forms.PictureBox();
+            this.groupBox59 = new System.Windows.Forms.GroupBox();
+            this.button69 = new System.Windows.Forms.Button();
+            this.pictureBox49 = new System.Windows.Forms.PictureBox();
+            this.groupBox60 = new System.Windows.Forms.GroupBox();
+            this.button70 = new System.Windows.Forms.Button();
+            this.pictureBox50 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -320,6 +350,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
             this.groupBox50.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
+            this.groupBox51.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
+            this.groupBox52.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
+            this.groupBox53.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
+            this.groupBox54.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
+            this.groupBox55.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
+            this.groupBox56.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
+            this.groupBox57.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
+            this.groupBox58.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
+            this.groupBox59.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).BeginInit();
+            this.groupBox60.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -338,11 +388,12 @@
             this.tabControl1.Location = new System.Drawing.Point(13, 13);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(316, 523);
+            this.tabControl1.Size = new System.Drawing.Size(457, 523);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.groupBox51);
             this.tabPage1.Controls.Add(this.groupBox5);
             this.tabPage1.Controls.Add(this.groupBox4);
             this.tabPage1.Controls.Add(this.groupBox3);
@@ -351,7 +402,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(308, 497);
+            this.tabPage1.Size = new System.Drawing.Size(449, 497);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Alt+1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -532,6 +583,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.groupBox52);
             this.tabPage2.Controls.Add(this.groupBox6);
             this.tabPage2.Controls.Add(this.groupBox7);
             this.tabPage2.Controls.Add(this.groupBox8);
@@ -540,7 +592,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(308, 497);
+            this.tabPage2.Size = new System.Drawing.Size(449, 497);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Alt+2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -721,6 +773,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.groupBox53);
             this.tabPage3.Controls.Add(this.groupBox11);
             this.tabPage3.Controls.Add(this.groupBox12);
             this.tabPage3.Controls.Add(this.groupBox13);
@@ -729,7 +782,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(308, 497);
+            this.tabPage3.Size = new System.Drawing.Size(449, 497);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Alt+3";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -910,6 +963,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.groupBox54);
             this.tabPage4.Controls.Add(this.groupBox16);
             this.tabPage4.Controls.Add(this.groupBox17);
             this.tabPage4.Controls.Add(this.groupBox18);
@@ -918,7 +972,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(308, 497);
+            this.tabPage4.Size = new System.Drawing.Size(449, 497);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Alt+4";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -1099,6 +1153,7 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.groupBox55);
             this.tabPage5.Controls.Add(this.groupBox21);
             this.tabPage5.Controls.Add(this.groupBox22);
             this.tabPage5.Controls.Add(this.groupBox23);
@@ -1107,7 +1162,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(308, 497);
+            this.tabPage5.Size = new System.Drawing.Size(449, 497);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Alt+5";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -1288,6 +1343,7 @@
             // 
             // tabPage6
             // 
+            this.tabPage6.Controls.Add(this.groupBox56);
             this.tabPage6.Controls.Add(this.groupBox26);
             this.tabPage6.Controls.Add(this.groupBox27);
             this.tabPage6.Controls.Add(this.groupBox28);
@@ -1296,7 +1352,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(308, 497);
+            this.tabPage6.Size = new System.Drawing.Size(449, 497);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Alt+6";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -1477,6 +1533,7 @@
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.groupBox57);
             this.tabPage7.Controls.Add(this.groupBox31);
             this.tabPage7.Controls.Add(this.groupBox32);
             this.tabPage7.Controls.Add(this.groupBox33);
@@ -1485,7 +1542,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(308, 497);
+            this.tabPage7.Size = new System.Drawing.Size(449, 497);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Alt+7";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -1666,6 +1723,7 @@
             // 
             // tabPage8
             // 
+            this.tabPage8.Controls.Add(this.groupBox58);
             this.tabPage8.Controls.Add(this.groupBox36);
             this.tabPage8.Controls.Add(this.groupBox37);
             this.tabPage8.Controls.Add(this.groupBox38);
@@ -1674,7 +1732,7 @@
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(308, 497);
+            this.tabPage8.Size = new System.Drawing.Size(449, 497);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Alt+8";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -1855,6 +1913,7 @@
             // 
             // tabPage9
             // 
+            this.tabPage9.Controls.Add(this.groupBox59);
             this.tabPage9.Controls.Add(this.groupBox41);
             this.tabPage9.Controls.Add(this.groupBox42);
             this.tabPage9.Controls.Add(this.groupBox43);
@@ -1863,7 +1922,7 @@
             this.tabPage9.Location = new System.Drawing.Point(4, 22);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(308, 497);
+            this.tabPage9.Size = new System.Drawing.Size(449, 497);
             this.tabPage9.TabIndex = 8;
             this.tabPage9.Text = "Alt+9";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -2044,6 +2103,7 @@
             // 
             // tabPage10
             // 
+            this.tabPage10.Controls.Add(this.groupBox60);
             this.tabPage10.Controls.Add(this.groupBox46);
             this.tabPage10.Controls.Add(this.groupBox47);
             this.tabPage10.Controls.Add(this.groupBox48);
@@ -2052,7 +2112,7 @@
             this.tabPage10.Location = new System.Drawing.Point(4, 22);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(308, 497);
+            this.tabPage10.Size = new System.Drawing.Size(449, 497);
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "Alt+0";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -2231,12 +2291,312 @@
             this.pictureBox37.TabStop = false;
             this.pictureBox37.Visible = false;
             // 
+            // groupBox51
+            // 
+            this.groupBox51.Controls.Add(this.button61);
+            this.groupBox51.Controls.Add(this.pictureBox41);
+            this.groupBox51.Location = new System.Drawing.Point(299, 7);
+            this.groupBox51.Name = "groupBox51";
+            this.groupBox51.Size = new System.Drawing.Size(140, 181);
+            this.groupBox51.TabIndex = 5;
+            this.groupBox51.TabStop = false;
+            this.groupBox51.Text = "背景（オプション）";
+            // 
+            // button61
+            // 
+            this.button61.AllowDrop = true;
+            this.button61.Location = new System.Drawing.Point(6, 150);
+            this.button61.Name = "button61";
+            this.button61.Size = new System.Drawing.Size(126, 23);
+            this.button61.TabIndex = 4;
+            this.button61.Text = "ここにファイルをドロップ";
+            this.button61.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox41
+            // 
+            this.pictureBox41.Location = new System.Drawing.Point(7, 19);
+            this.pictureBox41.Name = "pictureBox41";
+            this.pictureBox41.Size = new System.Drawing.Size(125, 125);
+            this.pictureBox41.TabIndex = 0;
+            this.pictureBox41.TabStop = false;
+            this.pictureBox41.Visible = false;
+            // 
+            // groupBox52
+            // 
+            this.groupBox52.Controls.Add(this.button62);
+            this.groupBox52.Controls.Add(this.pictureBox42);
+            this.groupBox52.Location = new System.Drawing.Point(299, 7);
+            this.groupBox52.Name = "groupBox52";
+            this.groupBox52.Size = new System.Drawing.Size(140, 181);
+            this.groupBox52.TabIndex = 6;
+            this.groupBox52.TabStop = false;
+            this.groupBox52.Text = "背景（オプション）";
+            // 
+            // button62
+            // 
+            this.button62.AllowDrop = true;
+            this.button62.Location = new System.Drawing.Point(6, 150);
+            this.button62.Name = "button62";
+            this.button62.Size = new System.Drawing.Size(126, 23);
+            this.button62.TabIndex = 4;
+            this.button62.Text = "ここにファイルをドロップ";
+            this.button62.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox42
+            // 
+            this.pictureBox42.Location = new System.Drawing.Point(7, 19);
+            this.pictureBox42.Name = "pictureBox42";
+            this.pictureBox42.Size = new System.Drawing.Size(125, 125);
+            this.pictureBox42.TabIndex = 0;
+            this.pictureBox42.TabStop = false;
+            this.pictureBox42.Visible = false;
+            // 
+            // groupBox53
+            // 
+            this.groupBox53.Controls.Add(this.button63);
+            this.groupBox53.Controls.Add(this.pictureBox43);
+            this.groupBox53.Location = new System.Drawing.Point(299, 7);
+            this.groupBox53.Name = "groupBox53";
+            this.groupBox53.Size = new System.Drawing.Size(140, 181);
+            this.groupBox53.TabIndex = 6;
+            this.groupBox53.TabStop = false;
+            this.groupBox53.Text = "背景（オプション）";
+            // 
+            // button63
+            // 
+            this.button63.AllowDrop = true;
+            this.button63.Location = new System.Drawing.Point(6, 150);
+            this.button63.Name = "button63";
+            this.button63.Size = new System.Drawing.Size(126, 23);
+            this.button63.TabIndex = 4;
+            this.button63.Text = "ここにファイルをドロップ";
+            this.button63.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox43
+            // 
+            this.pictureBox43.Location = new System.Drawing.Point(7, 19);
+            this.pictureBox43.Name = "pictureBox43";
+            this.pictureBox43.Size = new System.Drawing.Size(125, 125);
+            this.pictureBox43.TabIndex = 0;
+            this.pictureBox43.TabStop = false;
+            this.pictureBox43.Visible = false;
+            // 
+            // groupBox54
+            // 
+            this.groupBox54.Controls.Add(this.button64);
+            this.groupBox54.Controls.Add(this.pictureBox44);
+            this.groupBox54.Location = new System.Drawing.Point(299, 7);
+            this.groupBox54.Name = "groupBox54";
+            this.groupBox54.Size = new System.Drawing.Size(140, 181);
+            this.groupBox54.TabIndex = 6;
+            this.groupBox54.TabStop = false;
+            this.groupBox54.Text = "背景（オプション）";
+            // 
+            // button64
+            // 
+            this.button64.AllowDrop = true;
+            this.button64.Location = new System.Drawing.Point(6, 150);
+            this.button64.Name = "button64";
+            this.button64.Size = new System.Drawing.Size(126, 23);
+            this.button64.TabIndex = 4;
+            this.button64.Text = "ここにファイルをドロップ";
+            this.button64.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox44
+            // 
+            this.pictureBox44.Location = new System.Drawing.Point(7, 19);
+            this.pictureBox44.Name = "pictureBox44";
+            this.pictureBox44.Size = new System.Drawing.Size(125, 125);
+            this.pictureBox44.TabIndex = 0;
+            this.pictureBox44.TabStop = false;
+            this.pictureBox44.Visible = false;
+            // 
+            // groupBox55
+            // 
+            this.groupBox55.Controls.Add(this.button65);
+            this.groupBox55.Controls.Add(this.pictureBox45);
+            this.groupBox55.Location = new System.Drawing.Point(299, 7);
+            this.groupBox55.Name = "groupBox55";
+            this.groupBox55.Size = new System.Drawing.Size(140, 181);
+            this.groupBox55.TabIndex = 6;
+            this.groupBox55.TabStop = false;
+            this.groupBox55.Text = "背景（オプション）";
+            // 
+            // button65
+            // 
+            this.button65.AllowDrop = true;
+            this.button65.Location = new System.Drawing.Point(6, 150);
+            this.button65.Name = "button65";
+            this.button65.Size = new System.Drawing.Size(126, 23);
+            this.button65.TabIndex = 4;
+            this.button65.Text = "ここにファイルをドロップ";
+            this.button65.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox45
+            // 
+            this.pictureBox45.Location = new System.Drawing.Point(7, 19);
+            this.pictureBox45.Name = "pictureBox45";
+            this.pictureBox45.Size = new System.Drawing.Size(125, 125);
+            this.pictureBox45.TabIndex = 0;
+            this.pictureBox45.TabStop = false;
+            this.pictureBox45.Visible = false;
+            // 
+            // groupBox56
+            // 
+            this.groupBox56.Controls.Add(this.button66);
+            this.groupBox56.Controls.Add(this.pictureBox46);
+            this.groupBox56.Location = new System.Drawing.Point(299, 7);
+            this.groupBox56.Name = "groupBox56";
+            this.groupBox56.Size = new System.Drawing.Size(140, 181);
+            this.groupBox56.TabIndex = 6;
+            this.groupBox56.TabStop = false;
+            this.groupBox56.Text = "背景（オプション）";
+            // 
+            // button66
+            // 
+            this.button66.AllowDrop = true;
+            this.button66.Location = new System.Drawing.Point(6, 150);
+            this.button66.Name = "button66";
+            this.button66.Size = new System.Drawing.Size(126, 23);
+            this.button66.TabIndex = 4;
+            this.button66.Text = "ここにファイルをドロップ";
+            this.button66.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox46
+            // 
+            this.pictureBox46.Location = new System.Drawing.Point(7, 19);
+            this.pictureBox46.Name = "pictureBox46";
+            this.pictureBox46.Size = new System.Drawing.Size(125, 125);
+            this.pictureBox46.TabIndex = 0;
+            this.pictureBox46.TabStop = false;
+            this.pictureBox46.Visible = false;
+            // 
+            // groupBox57
+            // 
+            this.groupBox57.Controls.Add(this.button67);
+            this.groupBox57.Controls.Add(this.pictureBox47);
+            this.groupBox57.Location = new System.Drawing.Point(299, 7);
+            this.groupBox57.Name = "groupBox57";
+            this.groupBox57.Size = new System.Drawing.Size(140, 181);
+            this.groupBox57.TabIndex = 6;
+            this.groupBox57.TabStop = false;
+            this.groupBox57.Text = "背景（オプション）";
+            // 
+            // button67
+            // 
+            this.button67.AllowDrop = true;
+            this.button67.Location = new System.Drawing.Point(6, 150);
+            this.button67.Name = "button67";
+            this.button67.Size = new System.Drawing.Size(126, 23);
+            this.button67.TabIndex = 4;
+            this.button67.Text = "ここにファイルをドロップ";
+            this.button67.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox47
+            // 
+            this.pictureBox47.Location = new System.Drawing.Point(7, 19);
+            this.pictureBox47.Name = "pictureBox47";
+            this.pictureBox47.Size = new System.Drawing.Size(125, 125);
+            this.pictureBox47.TabIndex = 0;
+            this.pictureBox47.TabStop = false;
+            this.pictureBox47.Visible = false;
+            // 
+            // groupBox58
+            // 
+            this.groupBox58.Controls.Add(this.button68);
+            this.groupBox58.Controls.Add(this.pictureBox48);
+            this.groupBox58.Location = new System.Drawing.Point(299, 7);
+            this.groupBox58.Name = "groupBox58";
+            this.groupBox58.Size = new System.Drawing.Size(140, 181);
+            this.groupBox58.TabIndex = 6;
+            this.groupBox58.TabStop = false;
+            this.groupBox58.Text = "背景（オプション）";
+            // 
+            // button68
+            // 
+            this.button68.AllowDrop = true;
+            this.button68.Location = new System.Drawing.Point(6, 150);
+            this.button68.Name = "button68";
+            this.button68.Size = new System.Drawing.Size(126, 23);
+            this.button68.TabIndex = 4;
+            this.button68.Text = "ここにファイルをドロップ";
+            this.button68.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox48
+            // 
+            this.pictureBox48.Location = new System.Drawing.Point(7, 19);
+            this.pictureBox48.Name = "pictureBox48";
+            this.pictureBox48.Size = new System.Drawing.Size(125, 125);
+            this.pictureBox48.TabIndex = 0;
+            this.pictureBox48.TabStop = false;
+            this.pictureBox48.Visible = false;
+            // 
+            // groupBox59
+            // 
+            this.groupBox59.Controls.Add(this.button69);
+            this.groupBox59.Controls.Add(this.pictureBox49);
+            this.groupBox59.Location = new System.Drawing.Point(299, 7);
+            this.groupBox59.Name = "groupBox59";
+            this.groupBox59.Size = new System.Drawing.Size(140, 181);
+            this.groupBox59.TabIndex = 6;
+            this.groupBox59.TabStop = false;
+            this.groupBox59.Text = "背景（オプション）";
+            // 
+            // button69
+            // 
+            this.button69.AllowDrop = true;
+            this.button69.Location = new System.Drawing.Point(6, 150);
+            this.button69.Name = "button69";
+            this.button69.Size = new System.Drawing.Size(126, 23);
+            this.button69.TabIndex = 4;
+            this.button69.Text = "ここにファイルをドロップ";
+            this.button69.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox49
+            // 
+            this.pictureBox49.Location = new System.Drawing.Point(7, 19);
+            this.pictureBox49.Name = "pictureBox49";
+            this.pictureBox49.Size = new System.Drawing.Size(125, 125);
+            this.pictureBox49.TabIndex = 0;
+            this.pictureBox49.TabStop = false;
+            this.pictureBox49.Visible = false;
+            // 
+            // groupBox60
+            // 
+            this.groupBox60.Controls.Add(this.button70);
+            this.groupBox60.Controls.Add(this.pictureBox50);
+            this.groupBox60.Location = new System.Drawing.Point(299, 7);
+            this.groupBox60.Name = "groupBox60";
+            this.groupBox60.Size = new System.Drawing.Size(140, 181);
+            this.groupBox60.TabIndex = 6;
+            this.groupBox60.TabStop = false;
+            this.groupBox60.Text = "背景（オプション）";
+            // 
+            // button70
+            // 
+            this.button70.AllowDrop = true;
+            this.button70.Location = new System.Drawing.Point(6, 150);
+            this.button70.Name = "button70";
+            this.button70.Size = new System.Drawing.Size(126, 23);
+            this.button70.TabIndex = 4;
+            this.button70.Text = "ここにファイルをドロップ";
+            this.button70.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox50
+            // 
+            this.pictureBox50.Location = new System.Drawing.Point(7, 19);
+            this.pictureBox50.Name = "pictureBox50";
+            this.pictureBox50.Size = new System.Drawing.Size(125, 125);
+            this.pictureBox50.TabIndex = 0;
+            this.pictureBox50.TabStop = false;
+            this.pictureBox50.Visible = false;
+            // 
             // CustomForm
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(343, 548);
+            this.ClientSize = new System.Drawing.Size(483, 548);
             this.Controls.Add(this.tabControl1);
             this.DataBindings.Add(new System.Windows.Forms.Binding("Location", global::Puppet3.Properties.Settings.Default, "CustomFormLocation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -2368,6 +2728,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
             this.groupBox50.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
+            this.groupBox51.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
+            this.groupBox52.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
+            this.groupBox53.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
+            this.groupBox54.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
+            this.groupBox55.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).EndInit();
+            this.groupBox56.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).EndInit();
+            this.groupBox57.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
+            this.groupBox58.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).EndInit();
+            this.groupBox59.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).EndInit();
+            this.groupBox60.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2555,5 +2935,35 @@
         private System.Windows.Forms.GroupBox groupBox50;
         private System.Windows.Forms.Button button55;
         private System.Windows.Forms.PictureBox pictureBox37;
+        private System.Windows.Forms.GroupBox groupBox51;
+        private System.Windows.Forms.Button button61;
+        private System.Windows.Forms.PictureBox pictureBox41;
+        private System.Windows.Forms.GroupBox groupBox52;
+        private System.Windows.Forms.Button button62;
+        private System.Windows.Forms.PictureBox pictureBox42;
+        private System.Windows.Forms.GroupBox groupBox53;
+        private System.Windows.Forms.Button button63;
+        private System.Windows.Forms.PictureBox pictureBox43;
+        private System.Windows.Forms.GroupBox groupBox54;
+        private System.Windows.Forms.Button button64;
+        private System.Windows.Forms.PictureBox pictureBox44;
+        private System.Windows.Forms.GroupBox groupBox55;
+        private System.Windows.Forms.Button button65;
+        private System.Windows.Forms.PictureBox pictureBox45;
+        private System.Windows.Forms.GroupBox groupBox56;
+        private System.Windows.Forms.Button button66;
+        private System.Windows.Forms.PictureBox pictureBox46;
+        private System.Windows.Forms.GroupBox groupBox57;
+        private System.Windows.Forms.Button button67;
+        private System.Windows.Forms.PictureBox pictureBox47;
+        private System.Windows.Forms.GroupBox groupBox58;
+        private System.Windows.Forms.Button button68;
+        private System.Windows.Forms.PictureBox pictureBox48;
+        private System.Windows.Forms.GroupBox groupBox59;
+        private System.Windows.Forms.Button button69;
+        private System.Windows.Forms.PictureBox pictureBox49;
+        private System.Windows.Forms.GroupBox groupBox60;
+        private System.Windows.Forms.Button button70;
+        private System.Windows.Forms.PictureBox pictureBox50;
     }
 }

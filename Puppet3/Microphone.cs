@@ -10,7 +10,7 @@ namespace Puppet3
 {
     public partial class Microphone
     {
-        private int deviceCount = WaveIn.DeviceCount;
+        private int deviceCount;
         public int DeviceCount
         {
             get { return deviceCount; }
@@ -37,6 +37,7 @@ namespace Puppet3
 
         public Microphone()
         {
+            deviceCount = WaveIn.DeviceCount;
             if (deviceNumber + 1 > deviceCount)
             {
                 deviceNumber = 0;

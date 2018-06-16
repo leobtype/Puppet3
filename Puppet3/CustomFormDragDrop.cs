@@ -42,7 +42,16 @@ namespace Puppet3
         {
             PictureBox pictureBox = pictureBoxes[pictureNumber];
             Button button = pictureButtons[pictureNumber];
-            string file = CustomPictures.FullPath[pictureNumber];
+            string file;
+            if (pictureNumber < 40)
+            {
+                file = CustomPictures.FullPath[pictureNumber];
+            }
+            else
+            {
+                file = CustomBackground.FullPath[pictureNumber - 40];
+            }
+            
             string[] fromFiles = (string[])e.Data.GetData(DataFormats.FileDrop);
             if (ValidBitmap(fromFiles[0]))
             {
@@ -354,5 +363,56 @@ namespace Puppet3
         }
 
         private void Button60_DragDrop(object sender, DragEventArgs e) { }
+
+        // Button61 to Button70 for background
+        private void Button61_DragDrop(object sender, DragEventArgs e)
+        {
+            Button_DragDrop(40, e);
+        }
+
+        private void Button62_DragDrop(object sender, DragEventArgs e)
+        {
+            Button_DragDrop(41, e);
+        }
+
+        private void Button63_DragDrop(object sender, DragEventArgs e)
+        {
+            Button_DragDrop(42, e);
+        }
+
+        private void Button64_DragDrop(object sender, DragEventArgs e)
+        {
+            Button_DragDrop(43, e);
+        }
+
+        private void Button65_DragDrop(object sender, DragEventArgs e)
+        {
+            Button_DragDrop(44, e);
+        }
+
+        private void Button66_DragDrop(object sender, DragEventArgs e)
+        {
+            Button_DragDrop(45, e);
+        }
+
+        private void Button67_DragDrop(object sender, DragEventArgs e)
+        {
+            Button_DragDrop(46, e);
+        }
+
+        private void Button68_DragDrop(object sender, DragEventArgs e)
+        {
+            Button_DragDrop(47, e);
+        }
+
+        private void Button69_DragDrop(object sender, DragEventArgs e)
+        {
+            Button_DragDrop(48, e);
+        }
+
+        private void Button70_DragDrop(object sender, DragEventArgs e)
+        {
+            Button_DragDrop(49, e);
+        }
     }
 }

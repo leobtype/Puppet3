@@ -26,15 +26,31 @@ namespace Puppet3
 
         private void TimerEventProcessor(object obj, EventArgs e)
         {
-            if (JudgeSound() == true)
+            if (Properties.Settings.Default.MouthOpenWhileSound == true)
             {
-                ToggleEyes();
-                ToggleMouse();
+                if (JudgeSound() == true)
+                {
+                    ToggleEyes();
+                    MOUSE_OPEN = true;
+                }
+                else
+                {
+                    ToggleEyes();
+                    MOUSE_OPEN = false;
+                }
             }
             else
             {
-                ToggleEyes();
-                MOUSE_OPEN = false;
+                if (JudgeSound() == true)
+                {
+                    ToggleEyes();
+                    ToggleMouse();
+                }
+                else
+                {
+                    ToggleEyes();
+                    MOUSE_OPEN = false;
+                }
             }
             ReDraw();
         }
@@ -70,12 +86,22 @@ namespace Puppet3
                 pictureBoxes[1].Visible = false;
                 pictureBoxes[2].Visible = false;
             }
+            
             ResumeLayout(false);
         }
 
         private static bool JudgeSound()
         {
-            return ( microphone.VolumeLevel > microphone.VolumeLevelThreshold ) ? true : false;
+            switch (Properties.Settings.Default.SoundSource)
+            {
+                case "Microphone":
+                    //return (microphone.VolumeLevel > microphone.VolumeLevelThreshold) ? true : false;
+                    return (microphone.GetMicrophoneVolumeLevel() > microphone.VolumeLevelThreshold) ? true : false;
+                case "Application":
+                    return ((int)applicationSound.GetApplicationVolumeLevel() > Properties.Settings.Default.MicrophoneVolumeLevelThreshold) ? true : false;
+                default:
+                    return false;
+            }
         }
 
         private void ToggleEyes()

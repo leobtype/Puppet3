@@ -306,18 +306,6 @@ namespace Puppet3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string ApplicationSoundName {
-            get {
-                return ((string)(this["ApplicationSoundName"]));
-            }
-            set {
-                this["ApplicationSoundName"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20")]
         public int ApplicationSoundLevelThreshold {
             get {
@@ -325,6 +313,42 @@ namespace Puppet3.Properties {
             }
             set {
                 this["ApplicationSoundLevelThreshold"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SoundSource {
+            get {
+                return ((string)(this["SoundSource"]));
+            }
+            set {
+                this["SoundSource"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string MicrophoneDeviceId {
+            get {
+                return ((string)(this["MicrophoneDeviceId"]));
+            }
+            set {
+                this["MicrophoneDeviceId"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool MouthOpenWhileSound {
+            get {
+                return ((bool)(this["MouthOpenWhileSound"]));
+            }
+            set {
+                this["MouthOpenWhileSound"] = value;
             }
         }
     }

@@ -22,7 +22,11 @@ namespace Puppet3
                 button37, button38, button39, button40,
                 button43, button44, button45, button46,
                 button49, button50, button51, button52,
-                button55, button56, button57, button58
+                button55, button56, button57, button58,
+                // button61 to button70 for background
+                button61, button62, button63, button64,
+                button65, button66, button67, button68,
+                button69, button70
             };
             pictureButtons.AddRange(list);
         }

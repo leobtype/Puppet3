@@ -82,6 +82,16 @@ namespace Puppet3
             button58.DragDrop += new DragEventHandler(Button58_DragDrop);
             button59.DragDrop += new DragEventHandler(Button59_DragDrop);
             button60.DragDrop += new DragEventHandler(Button60_DragDrop);
+            button61.DragDrop += new DragEventHandler(Button61_DragDrop);
+            button62.DragDrop += new DragEventHandler(Button62_DragDrop);
+            button63.DragDrop += new DragEventHandler(Button63_DragDrop);
+            button64.DragDrop += new DragEventHandler(Button64_DragDrop);
+            button65.DragDrop += new DragEventHandler(Button65_DragDrop);
+            button66.DragDrop += new DragEventHandler(Button66_DragDrop);
+            button67.DragDrop += new DragEventHandler(Button67_DragDrop);
+            button68.DragDrop += new DragEventHandler(Button68_DragDrop);
+            button69.DragDrop += new DragEventHandler(Button69_DragDrop);
+            button70.DragDrop += new DragEventHandler(Button70_DragDrop);
 
             button1.MouseClick += new MouseEventHandler(Button1_MouseClick);
             button2.MouseClick += new MouseEventHandler(Button2_MouseClick);
@@ -143,6 +153,16 @@ namespace Puppet3
             button58.MouseClick += new MouseEventHandler(Button58_MouseClick);
             button59.MouseClick += new MouseEventHandler(Button59_MouseClick);
             button60.MouseClick += new MouseEventHandler(Button60_MouseClick);
+            button61.MouseClick += new MouseEventHandler(Button61_MouseClick);
+            button62.MouseClick += new MouseEventHandler(Button62_MouseClick);
+            button63.MouseClick += new MouseEventHandler(Button63_MouseClick);
+            button64.MouseClick += new MouseEventHandler(Button64_MouseClick);
+            button65.MouseClick += new MouseEventHandler(Button65_MouseClick);
+            button66.MouseClick += new MouseEventHandler(Button66_MouseClick);
+            button67.MouseClick += new MouseEventHandler(Button67_MouseClick);
+            button68.MouseClick += new MouseEventHandler(Button68_MouseClick);
+            button69.MouseClick += new MouseEventHandler(Button69_MouseClick);
+            button70.MouseClick += new MouseEventHandler(Button70_MouseClick);
         }
     }
 }

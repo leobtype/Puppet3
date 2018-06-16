@@ -79,6 +79,7 @@
     <Compile Include="ConfigFormEvents.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="CustomBackground.cs" />
     <Compile Include="CustomForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +122,7 @@
       <DependentUpon>MascotForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Microphone.cs" />
+    <Compile Include="Microphone2.cs" />
     <Compile Include="MicrophoneVolumeLevel.cs" />
     <Compile Include="MicrophoneWaveFormat.cs" />
     <Compile Include="Motion.cs">
@@ -196,6 +198,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Puppet2.ico" />
+    <None Include="Resources\default5.gif" />
+    <None Include="Resources\default4.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

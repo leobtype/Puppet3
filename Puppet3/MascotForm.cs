@@ -12,11 +12,11 @@ namespace Puppet3
 {
     public partial class MascotForm : Form
     {
-        private static Microphone microphone;
+        private static Microphone2 microphone;
         private static SoundPlayer soundPlayer;
         private static ApplicationSound applicationSound;
 
-        public MascotForm(Microphone mic, SoundPlayer sound, ApplicationSound appSound)
+        public MascotForm(Microphone2 mic, SoundPlayer sound, ApplicationSound appSound)
         {
             microphone = mic;
             soundPlayer = sound;
@@ -28,7 +28,7 @@ namespace Puppet3
 
         private void propertiesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ConfigForm configForm = new ConfigForm(this, microphone);
+            ConfigForm configForm = new ConfigForm(this, microphone, applicationSound);
             configForm.ShowDialog(this);
         }
 

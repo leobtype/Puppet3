@@ -23,12 +23,29 @@ namespace Puppet3
             {
                 Controls.Add(pictureBox);
                 SetMouseEvent(pictureBox);
-                pictureBox.Visible = false;
+                //pictureBox.Visible = false;
             }
             ClientSize = new Size(pictureBoxes[0].Size.Width, pictureBoxes[0].Size.Height);
             pictureBoxes[0].Visible = true;
+            SetBackgroundImage();
             SetLocation();
             this.ResumeLayout(false);
+        }
+
+        private void SetBackgroundImage()
+        {
+            if (pictureBoxes.Count > 4)
+            {
+                pictureBoxes[4].Visible = true;
+                pictureBoxes[0].Parent = pictureBoxes[4];
+                pictureBoxes[1].Parent = pictureBoxes[4];
+                pictureBoxes[2].Parent = pictureBoxes[4];
+                pictureBoxes[3].Parent = pictureBoxes[4];
+                pictureBoxes[0].BackColor = Color.Transparent;
+                pictureBoxes[1].BackColor = Color.Transparent;
+                pictureBoxes[2].BackColor = Color.Transparent;
+                pictureBoxes[3].BackColor = Color.Transparent;
+            }
         }
 
         private void SetLocation()
@@ -73,12 +90,17 @@ namespace Puppet3
                     currentBitmaps.Add(new Bitmap(picture));
                 }
             }
+            if (File.Exists(CustomBackground.Current))
+            {
+                currentBitmaps.Add(new Bitmap(CustomBackground.Current));
+            }
             else
             {
                 currentBitmaps.Add(Properties.Resources.default0);
                 currentBitmaps.Add(Properties.Resources.default1);
                 currentBitmaps.Add(Properties.Resources.default2);
                 currentBitmaps.Add(Properties.Resources.default3);
+                currentBitmaps.Add(Properties.Resources.default5);
             }
             return currentBitmaps;
         }

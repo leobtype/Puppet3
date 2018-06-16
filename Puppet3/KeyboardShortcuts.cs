@@ -15,70 +15,92 @@ namespace Puppet3
         {
             if (keyData == (Keys.Alt | Keys.D1))
             {
-                Alt_Number(new int[] { 0, 1, 2, 3 }, 0);
+                Alt_Number(new int[] { 0, 1, 2, 3 }, 0, 0);
                 return true;
             }
             if (keyData == (Keys.Alt | Keys.D2))
             {
-                Alt_Number(new int[] { 4, 5, 6, 7 }, 1);
+                Alt_Number(new int[] { 4, 5, 6, 7 }, 1, 1);
                 return true;
             }
             if (keyData == (Keys.Alt | Keys.D3))
             {
-                Alt_Number(new int[] { 8, 9, 10, 11 }, 2);
+                Alt_Number(new int[] { 8, 9, 10, 11 }, 2, 2);
                 return true;
             }
             if (keyData == (Keys.Alt | Keys.D4))
             {
-                Alt_Number(new int[] { 12, 13, 14, 15 }, 3);
+                Alt_Number(new int[] { 12, 13, 14, 15 }, 3, 3);
                 return true;
             }
             if (keyData == (Keys.Alt | Keys.D5))
             {
-                Alt_Number(new int[] { 16, 17, 18, 19 }, 4);
+                Alt_Number(new int[] { 16, 17, 18, 19 }, 4, 4);
                 return true;
             }
             if (keyData == (Keys.Alt | Keys.D6))
             {
-                Alt_Number(new int[] { 20, 21, 22, 23 }, 5);
+                Alt_Number(new int[] { 20, 21, 22, 23 }, 5, 5);
                 return true;
             }
             if (keyData == (Keys.Alt | Keys.D7))
             {
-                Alt_Number(new int[] { 24, 25, 26, 27 }, 6);
+                Alt_Number(new int[] { 24, 25, 26, 27 }, 6, 6);
                 return true;
             }
             if (keyData == (Keys.Alt | Keys.D8))
             {
-                Alt_Number(new int[] { 28, 29, 30, 31 }, 7);
+                Alt_Number(new int[] { 28, 29, 30, 31 }, 7, 7);
                 return true;
             }
             if (keyData == (Keys.Alt | Keys.D9))
             {
-                Alt_Number(new int[] { 32, 33, 34, 35 }, 8);
+                Alt_Number(new int[] { 32, 33, 34, 35 }, 8, 8);
                 return true;
             }
             if (keyData == (Keys.Alt | Keys.D0))
             {
-                Alt_Number(new int[] { 36, 37, 38, 39 }, 9);
+                Alt_Number(new int[] { 36, 37, 38, 39 }, 9, 9);
                 return true;
             }
             return base.ProcessCmdKey(ref msg, keyData);
         }
 
-        private void DrawPictures(int [] pictureNums)
+        private void DrawPictures(int [] pictureNums, int backgroundNum)
         {
             SuspendLayout();
             int i = 0;
             foreach (int p in pictureNums)
             {
                 pictureBoxes[i].Image.Dispose();
-                File.Copy(CustomPictures.FullPath[p], CustomPictures.Current[i], true);
-                InitializePictureBox(pictureBoxes[i], new Bitmap(CustomPictures.Current[i]));
+                {
+                    File.Copy(CustomPictures.FullPath[p], CustomPictures.Current[i], true);
+                    InitializePictureBox(pictureBoxes[i], new Bitmap(CustomPictures.Current[i]));
+                }
                 i++;
             }
             ClientSize = new Size(pictureBoxes[0].Size.Width, pictureBoxes[0].Size.Height);
             pictureBoxes[0].Visible = true;
+            if (File.Exists(CustomBackground.FullPath[backgroundNum]))
+            {
+                pictureBoxes[4].Image.Dispose();
+                File.Copy(CustomBackground.FullPath[backgroundNum], CustomBackground.Current, true);
+                InitializePictureBox(pictureBoxes[4], new Bitmap(CustomBackground.Current));
+                for (int j = 0; j < 4; j++)
+                {
+                    pictureBoxes[j].Parent = pictureBoxes[4];
+                }
+                pictureBoxes[4].Visible = true;
+            }
+            else
+            {
+                foreach (int p in pictureNums)
+                {
+                    pictureBoxes[p].Parent = this;
+                }
+                pictureBoxes[4].Visible = false;
+            }
+
             ResumeLayout(false);
         }
 
@@ -116,7 +138,7 @@ namespace Puppet3
             }
         }
 
-        private async void Alt_Number(int[] pictureNums, int soundNum)
+        private async void Alt_Number(int[] pictureNums, int backgroundNum, int soundNum)
         {
             bool customPicturesExists = true;
             foreach (int i in pictureNums)
@@ -124,12 +146,11 @@ namespace Puppet3
                 if (File.Exists(CustomPictures.FullPath[i]) == false)
                 {
                     customPicturesExists = false;
-                    break;
                 }
             }
             if (customPicturesExists)
             {
-                DrawPictures(pictureNums);
+                DrawPictures(pictureNums, backgroundNum);
                 await Task.Run(() => PlaySound(soundNum));
             }
         }
