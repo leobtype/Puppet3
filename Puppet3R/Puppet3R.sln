@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Puppet3R", "Puppet3R.csproj", "{8F9B7FFF-EAA9-445E-9667-7300D4F61EA7}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Puppet3R_Installer", "..\InstallerR\Installer.vdproj", "{186187FA-1E6B-4AF5-84D3-597E2B1260FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F9B7FFF-EAA9-445E-9667-7300D4F61EA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F9B7FFF-EAA9-445E-9667-7300D4F61EA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F9B7FFF-EAA9-445E-9667-7300D4F61EA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F9B7FFF-EAA9-445E-9667-7300D4F61EA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{186187FA-1E6B-4AF5-84D3-597E2B1260FA}.Debug|Any CPU.ActiveCfg = Debug
+		{186187FA-1E6B-4AF5-84D3-597E2B1260FA}.Debug|Any CPU.Build.0 = Debug
+		{186187FA-1E6B-4AF5-84D3-597E2B1260FA}.Release|Any CPU.ActiveCfg = Release
+		{186187FA-1E6B-4AF5-84D3-597E2B1260FA}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {772A6472-8B13-44D1-B44D-BF2B2AFB8E6E}
+	EndGlobalSection
+EndGlobal
