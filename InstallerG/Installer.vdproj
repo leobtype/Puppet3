@@ -15,12 +15,6 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_192BFFD7BC3EFC4F27F65797FC648EDD"
-        "OwnerKey" = "8:_7CFC6E31E61C421C971D73575D47A060"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_6469D6DF1BBE487389DAE647A644B41C"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -47,12 +41,6 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_CB2036760B56A57EC411CE0781E434C9"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_192BFFD7BC3EFC4F27F65797FC648EDD"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -150,37 +138,6 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_192BFFD7BC3EFC4F27F65797FC648EDD"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
-                "ScatterAssemblies"
-                {
-                    "_192BFFD7BC3EFC4F27F65797FC648EDD"
-                    {
-                    "Name" = "8:System.Net.Http.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:System.Net.Http.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_7B5954DA6B964E4585014AF7BE74B666"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6469D6DF1BBE487389DAE647A644B41C"
             {
             "SourcePath" = "8:..\\Puppet3G\\Puppet3G.ico"
@@ -299,15 +256,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Puppet3G"
-        "ProductCode" = "8:{28C9FD77-5240-43DC-BF6D-C158607A863F}"
-        "PackageCode" = "8:{F7901417-0AFB-457A-A200-040ADC68ACD6}"
+        "ProductCode" = "8:{72B8A356-E388-4939-8201-6A8D324FC3A7}"
+        "PackageCode" = "8:{D54AF128-0FC7-4F47-8D6B-13C40B5B6A31}"
         "UpgradeCode" = "8:{5E3DBB3F-CD34-4B27-A3D5-42C323B266B1}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:3.0.0"
+        "ProductVersion" = "8:3.1.0"
         "Manufacturer" = "8:Leo-typeb"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"

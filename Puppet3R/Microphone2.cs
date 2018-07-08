@@ -55,7 +55,9 @@ namespace Puppet3
                     microphone.FriendlyName,
                     microphone.DeviceFriendlyName
                 });
+                microphone.Dispose();
             }
+            deviceEnumerator.Dispose();
             return microphoneInfo;
         }
 
@@ -68,15 +70,29 @@ namespace Puppet3
                 if (microphone.ID == this.MicrophoneId)
                 {
                     volume = microphone.AudioMeterInformation.MasterPeakValue;
+                    microphone.Dispose();
                     break;
                 }
+                else
+                {
+                    microphone.Dispose();
+                }
             }
+            deviceEnumerator.Dispose();
             return volume * 100;
         }
 
         public void Start()
         {
-            waveInStream.StartRecording();
+            try
+            {
+                waveInStream.StartRecording();
+            }
+            catch
+            {
+                // no available recording device
+            }
+
         }
         public void Stop()
         {

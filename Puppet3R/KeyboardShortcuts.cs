@@ -90,6 +90,17 @@ namespace Puppet3
             pictureBoxes[2].Parent = pictureBoxes[4];
             pictureBoxes[3].Parent = pictureBoxes[4];
             ClientSize = new Size(pictureBoxes[0].Size.Width, pictureBoxes[0].Size.Height);
+            foreach (string customPicture in CustomPictures.Current)
+            {
+                if (File.Exists(customPicture))
+                {
+                    File.Delete(customPicture);
+                }
+            }
+            if (File.Exists(CustomBackground.Current))
+            {
+                File.Delete(CustomBackground.Current);
+            }
             ResumeLayout(false);
         }
 
