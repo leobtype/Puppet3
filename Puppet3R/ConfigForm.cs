@@ -22,6 +22,7 @@ namespace Puppet3
             mascotForm = form;
             microphone = mic;
             applicationSound = appSound;
+            applicationSound.Refresh();
             InitializeComponent();
             InitializeRadioButton();
             SetEvents();
@@ -120,11 +121,11 @@ namespace Puppet3
             {
                 case "Render":
                     comboBox2.Items.AddRange(apps);
-                    comboBox2.SelectedIndex = index;
+                    if (comboBox2.Items.Count > 0) comboBox2.SelectedIndex = index;
                     break;
                 case "Capture":
                     comboBox3.Items.AddRange(apps);
-                    comboBox3.SelectedIndex = index;
+                    if (comboBox3.Items.Count > 0) comboBox3.SelectedIndex = index;
                     break;
                 default:
                     break;
@@ -149,7 +150,14 @@ namespace Puppet3
             }
             string[] mics = info.ToArray();
             comboBox1.Items.AddRange(mics);
-            comboBox1.SelectedIndex = index;
+            try
+            {
+                comboBox1.SelectedIndex = index;
+            }
+            catch
+            {
+                // no available recording device
+            }
         }
 
         private void IndicateMicrophoneVolumeLevel()

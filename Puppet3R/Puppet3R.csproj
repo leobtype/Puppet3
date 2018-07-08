@@ -64,7 +64,6 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
@@ -200,7 +199,6 @@
     <None Include="Resources\default4.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Puppet3G.ico" />
     <Content Include="Puppet3R.ico" />
     <None Include="Resources\r-default3.png" />
     <None Include="Resources\r-default2.png" />

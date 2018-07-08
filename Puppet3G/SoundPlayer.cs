@@ -27,19 +27,34 @@ namespace Puppet3
             baStream = new BlockAlignReductionStream(pcmStream);
 
             waveOut = new WaveOut(WaveCallbackInfo.FunctionCallback());
-            waveOut.Init(baStream);
+            try
+            {
+                waveOut.Init(baStream);
+            }
+            catch
+            {
+                return false;
+            }
             return true;
         }
 
         public void Play(int volumeLevel)
         {
-            baStream.Position = 0;
-            waveOut.Volume = 1.0f * volumeLevel / 100;
-            waveOut.Play();
-            while (waveOut.PlaybackState == PlaybackState.Playing)
+            try
             {
-                Thread.Sleep(100);
+                baStream.Position = 0;
+                waveOut.Volume = 1.0f * volumeLevel / 100;
+                waveOut.Play();
+                while (waveOut.PlaybackState == PlaybackState.Playing)
+                {
+                    Thread.Sleep(100);
+                }
             }
+            catch
+            {
+                // no available speaker device
+            }
+
         }
 
         public void Stop()
