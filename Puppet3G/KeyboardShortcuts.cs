@@ -104,7 +104,7 @@ namespace Puppet3
             ResumeLayout(false);
         }
 
-        private void DrawPictures(int [] pictureNums, int backgroundNum)
+        private void DrawPictures(int[] pictureNums, int backgroundNum)
         {
             SuspendLayout();
             int i = 0;

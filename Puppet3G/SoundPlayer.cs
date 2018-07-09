@@ -68,9 +68,9 @@ namespace Puppet3
 
         public void Dispose()
         {
-            if(waveOut != null) waveOut.Dispose();
-            if(reader != null) reader.Dispose();
-            if(baStream != null) baStream.Dispose();
+            if (waveOut != null) waveOut.Dispose();
+            if (reader != null) reader.Dispose();
+            if (baStream != null) baStream.Dispose();
         }
     }
 }

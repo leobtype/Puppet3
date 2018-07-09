@@ -31,14 +31,14 @@ namespace Puppet3
             ConfigForm configForm = new ConfigForm(this, microphone, applicationSound);
             try
             {
-                
+
                 configForm.ShowDialog(this);
             }
             finally
             {
                 configForm.Dispose();
             }
-            
+
         }
 
         private void closeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -47,7 +47,7 @@ namespace Puppet3
             microphone.Dispose();
             Close();
         }
-        
+
         public static void ResizePictureBoxes(int scale)
         {
             foreach (PictureBox pictureBox in pictureBoxes)
