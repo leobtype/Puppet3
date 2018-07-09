@@ -92,7 +92,7 @@ namespace Puppet3
             {
                 // no available recording device
             }
-            
+
         }
         public void Stop()
         {
