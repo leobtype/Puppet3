@@ -48,15 +48,24 @@ namespace Puppet3
             Close();
         }
 
-        public static void ResizePictureBoxes(int scale)
+        public void ResizePictureBoxes(int scale)
         {
-            foreach (PictureBox pictureBox in pictureBoxes)
+            SuspendLayout();
+            for (int i = 0; i < pictureBoxes.Count; i++)
             {
-                ResizePictureBox(pictureBox, scale);
+                if (i == 0)
+                {
+                    ResizePictureBox(pictureBoxes[i], scale);
+                }
+                else
+                {
+                    pictureBoxes[i].Size = pictureBoxes[0].Size;
+                }
             }
+            ResumeLayout(false);
         }
 
-        private static void ResizePictureBox(PictureBox pictureBox, int scaleVal)
+        private void ResizePictureBox(PictureBox pictureBox, int scaleVal)
         {
             float scale = scaleVal / 100.0f;
             int width = pictureBox.Image.Width;

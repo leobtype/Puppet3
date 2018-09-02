@@ -81,7 +81,7 @@ namespace Puppet3
 
         private void NumericUpDown1_ValueChanged(Object sender, EventArgs e)
         {
-            MascotForm.ResizePictureBoxes((int)numericUpDown1.Value);
+            mascotForm.ResizePictureBoxes((int)numericUpDown1.Value);
         }
 
         private void Form_Closed(object sender, EventArgs e)
