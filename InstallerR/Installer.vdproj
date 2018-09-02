@@ -145,11 +145,6 @@
             "AssemblyAsmDisplayName" = "8:NAudio, Version=1.8.4.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_9534E80D037DEF4FB0EA3CB6E915A55E"
-                    {
-                    "Name" = "8:NAudio.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:NAudio.dll"
             "TargetName" = "8:"
@@ -256,15 +251,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Puppet3R"
-        "ProductCode" = "8:{1970E0A3-1D39-4EA8-B0D5-C88328AD65B5}"
-        "PackageCode" = "8:{8DB5363F-14B4-4BBF-8650-0356400139ED}"
+        "ProductCode" = "8:{5CF8E3B1-FAE3-483E-9B90-2E0661F060AC}"
+        "PackageCode" = "8:{56393F9F-839D-481D-BC02-9CABB7390F4E}"
         "UpgradeCode" = "8:{9A576BA9-E330-46F8-8FB8-DF5DEE5875CD}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:3.1.1"
+        "ProductVersion" = "8:3.1.2"
         "Manufacturer" = "8:Leo-typeb"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -806,7 +801,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_7CFC6E31E61C421C971D73575D47A060"
             {
-            "SourcePath" = "8:..\\Puppet3R\\obj\\Release\\Puppet3R.exe"
+            "SourcePath" = "8:..\\Puppet3R\\obj\\Debug\\Puppet3R.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_7B5954DA6B964E4585014AF7BE74B666"

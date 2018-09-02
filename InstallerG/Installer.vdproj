@@ -27,20 +27,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_CB2036760B56A57EC411CE0781E434C9"
-        "OwnerKey" = "8:_7CFC6E31E61C421C971D73575D47A060"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_7CFC6E31E61C421C971D73575D47A060"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_CB2036760B56A57EC411CE0781E434C9"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -158,37 +146,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CB2036760B56A57EC411CE0781E434C9"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:NAudio, Version=1.8.4.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_CB2036760B56A57EC411CE0781E434C9"
-                    {
-                    "Name" = "8:NAudio.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:NAudio.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_7B5954DA6B964E4585014AF7BE74B666"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
         }
         "FileType"
         {
@@ -256,15 +213,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Puppet3G"
-        "ProductCode" = "8:{62AEF54B-6F02-4F20-83FF-20C563E7EB20}"
-        "PackageCode" = "8:{4F0A0285-0819-47B2-A0B1-B4F41840998B}"
+        "ProductCode" = "8:{BC4F7BE2-8D81-4F5F-999F-3CB90F263C7B}"
+        "PackageCode" = "8:{DA018FB3-8368-488F-B91F-9A2C634C12F2}"
         "UpgradeCode" = "8:{5E3DBB3F-CD34-4B27-A3D5-42C323B266B1}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:3.1.1"
+        "ProductVersion" = "8:3.1.2"
         "Manufacturer" = "8:Leo-typeb"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
