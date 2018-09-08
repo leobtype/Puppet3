@@ -78,18 +78,21 @@ namespace Puppet3
             pictureBoxes[2].Image.Dispose();
             pictureBoxes[3].Image.Dispose();
             pictureBoxes[4].Image.Dispose();
-            InitializePictureBox(pictureBoxes[0], new Bitmap(Properties.Resources.default0));
-            InitializePictureBox(pictureBoxes[1], new Bitmap(Properties.Resources.default1));
-            InitializePictureBox(pictureBoxes[2], new Bitmap(Properties.Resources.default2));
-            InitializePictureBox(pictureBoxes[3], new Bitmap(Properties.Resources.default3));
-            InitializePictureBox(pictureBoxes[4], new Bitmap(Properties.Resources.default5));
-            pictureBoxes[4].Visible = true;
+            ResetPictureBox(pictureBoxes[0], new Bitmap(Properties.Resources.default0));
+            ResetPictureBox(pictureBoxes[1], new Bitmap(Properties.Resources.default1));
+            ResetPictureBox(pictureBoxes[2], new Bitmap(Properties.Resources.default2));
+            ResetPictureBox(pictureBoxes[3], new Bitmap(Properties.Resources.default3));
+            ResetPictureBox(pictureBoxes[4], new Bitmap(Properties.Resources.default5));
+            ClientSize = pictureBoxes[0].Size;
             pictureBoxes[4].Parent = this;
+            pictureBoxes[4].Visible = true;
+            pictureBoxes[0].Visible = true;
             pictureBoxes[0].Parent = pictureBoxes[4];
             pictureBoxes[1].Parent = pictureBoxes[4];
             pictureBoxes[2].Parent = pictureBoxes[4];
             pictureBoxes[3].Parent = pictureBoxes[4];
-            ClientSize = new Size(pictureBoxes[0].Size.Width, pictureBoxes[0].Size.Height);
+            ResumeLayout(true);
+ 
             foreach (string customPicture in CustomPictures.Current)
             {
                 if (File.Exists(customPicture))
@@ -101,7 +104,6 @@ namespace Puppet3
             {
                 File.Delete(CustomBackground.Current);
             }
-            ResumeLayout(false);
         }
 
         private void DrawPictures(int[] pictureNums, int backgroundNum)
@@ -113,22 +115,22 @@ namespace Puppet3
                 pictureBoxes[i].Image.Dispose();
                 {
                     File.Copy(CustomPictures.FullPath[p], CustomPictures.Current[i], true);
-                    InitializePictureBox(pictureBoxes[i], new Bitmap(CustomPictures.Current[i]));
+                    ResetPictureBox(pictureBoxes[i], new Bitmap(CustomPictures.Current[i]));
                 }
                 i++;
             }
-            ClientSize = new Size(pictureBoxes[0].Size.Width, pictureBoxes[0].Size.Height);
+            ClientSize = pictureBoxes[0].Size;
             if (File.Exists(CustomBackground.FullPath[backgroundNum]))
             {
                 pictureBoxes[4].Image.Dispose();
                 File.Copy(CustomBackground.FullPath[backgroundNum], CustomBackground.Current, true);
-                InitializePictureBox(pictureBoxes[4], new Bitmap(CustomBackground.Current));
+                ResetPictureBox(pictureBoxes[4], new Bitmap(CustomBackground.Current));
             }
             else
             {
                 pictureBoxes[4].Image.Dispose();
                 File.Delete(CustomBackground.Current);
-                InitializePictureBox(pictureBoxes[4], new Bitmap(Properties.Resources.spacer));
+                ResetPictureBox(pictureBoxes[4], new Bitmap(Properties.Resources.spacer));
                 pictureBoxes[4].Size = pictureBoxes[0].Size;
             }
             for (int j = 0; j < 4; j++)
@@ -136,7 +138,8 @@ namespace Puppet3
                 pictureBoxes[j].Parent = pictureBoxes[4];
             }
             pictureBoxes[4].Visible = true;
-            ResumeLayout(false);
+            pictureBoxes[1].Visible = true;
+            ResumeLayout(true);
         }
 
         private void PlaySound(int soundNum)

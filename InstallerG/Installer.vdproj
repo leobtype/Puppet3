@@ -213,15 +213,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Puppet3G"
-        "ProductCode" = "8:{BC4F7BE2-8D81-4F5F-999F-3CB90F263C7B}"
-        "PackageCode" = "8:{DA018FB3-8368-488F-B91F-9A2C634C12F2}"
+        "ProductCode" = "8:{4E2DBFCA-1A63-4875-847C-77FB4E1D36D2}"
+        "PackageCode" = "8:{8F85E876-21EB-445F-84FC-47E4D853BE45}"
         "UpgradeCode" = "8:{5E3DBB3F-CD34-4B27-A3D5-42C323B266B1}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:3.1.2"
+        "ProductVersion" = "8:3.1.3"
         "Manufacturer" = "8:Leo-typeb"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -763,7 +763,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_7CFC6E31E61C421C971D73575D47A060"
             {
-            "SourcePath" = "8:..\\Puppet3G\\obj\\Release\\Puppet3G.exe"
+            "SourcePath" = "8:..\\Puppet3G\\obj\\Debug\\Puppet3G.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_7B5954DA6B964E4585014AF7BE74B666"

@@ -75,9 +75,9 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.numericUpDown1);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(274, 280);
+            this.groupBox1.Size = new System.Drawing.Size(274, 303);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "マスコットの表示とモーション";
@@ -87,9 +87,9 @@
             this.checkBox3.AutoSize = true;
             this.checkBox3.Checked = global::Puppet3.Properties.Settings.Default.MouthOpenWhileSound;
             this.checkBox3.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::Puppet3.Properties.Settings.Default, "MouthOpenWhileSound", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox3.Location = new System.Drawing.Point(6, 248);
+            this.checkBox3.Location = new System.Drawing.Point(6, 269);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(190, 16);
+            this.checkBox3.Size = new System.Drawing.Size(192, 17);
             this.checkBox3.TabIndex = 28;
             this.checkBox3.Text = "音声入力中は口をあけたままにする";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -100,18 +100,18 @@
             this.checkBox2.Checked = global::Puppet3.Properties.Settings.Default.Transparency;
             this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox2.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::Puppet3.Properties.Settings.Default, "Transparency", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox2.Location = new System.Drawing.Point(190, 74);
+            this.checkBox2.Location = new System.Drawing.Point(190, 80);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(72, 16);
+            this.checkBox2.Size = new System.Drawing.Size(74, 17);
             this.checkBox2.TabIndex = 27;
             this.checkBox2.Text = "背景透過";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(111, 70);
+            this.button1.Location = new System.Drawing.Point(111, 76);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(49, 23);
+            this.button1.Size = new System.Drawing.Size(53, 25);
             this.button1.TabIndex = 26;
             this.button1.Text = "色選択";
             this.button1.UseVisualStyleBackColor = true;
@@ -121,17 +121,17 @@
             this.textBox1.BackColor = global::Puppet3.Properties.Settings.Default.MascotBackColor;
             this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("BackColor", global::Puppet3.Properties.Settings.Default, "MascotBackColor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(5, 72);
+            this.textBox1.Location = new System.Drawing.Point(5, 78);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 19);
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 25;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(8, 56);
+            this.label7.Location = new System.Drawing.Point(8, 61);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 12);
+            this.label7.Size = new System.Drawing.Size(43, 13);
             this.label7.TabIndex = 24;
             this.label7.Text = "背景色";
             // 
@@ -141,9 +141,9 @@
             this.checkBox1.Checked = global::Puppet3.Properties.Settings.Default.TopMost;
             this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::Puppet3.Properties.Settings.Default, "TopMost", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox1.Location = new System.Drawing.Point(151, 30);
+            this.checkBox1.Location = new System.Drawing.Point(151, 33);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(114, 16);
+            this.checkBox1.Size = new System.Drawing.Size(116, 17);
             this.checkBox1.TabIndex = 23;
             this.checkBox1.Text = "常に最前面に表示";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -152,7 +152,7 @@
             // 
             this.trackBar2.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::Puppet3.Properties.Settings.Default, "BlinkFrequency", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.trackBar2.LargeChange = 100;
-            this.trackBar2.Location = new System.Drawing.Point(7, 197);
+            this.trackBar2.Location = new System.Drawing.Point(7, 213);
             this.trackBar2.Maximum = 1000;
             this.trackBar2.Minimum = 50;
             this.trackBar2.Name = "trackBar2";
@@ -165,9 +165,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 182);
+            this.label3.Location = new System.Drawing.Point(8, 197);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(154, 12);
+            this.label3.Size = new System.Drawing.Size(156, 13);
             this.label3.TabIndex = 21;
             this.label3.Text = "まばたきの頻度（少ない～多い）";
             // 
@@ -175,7 +175,7 @@
             // 
             this.trackBar1.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::Puppet3.Properties.Settings.Default, "BlinkDuration", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.trackBar1.LargeChange = 100;
-            this.trackBar1.Location = new System.Drawing.Point(7, 134);
+            this.trackBar1.Location = new System.Drawing.Point(7, 145);
             this.trackBar1.Maximum = 1000;
             this.trackBar1.Minimum = 50;
             this.trackBar1.Name = "trackBar1";
@@ -188,9 +188,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 119);
+            this.label2.Location = new System.Drawing.Point(8, 129);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 12);
+            this.label2.Size = new System.Drawing.Size(129, 13);
             this.label2.TabIndex = 19;
             this.label2.Text = "動作の速さ（速い～遅い）";
             // 
@@ -199,7 +199,7 @@
             this.numericUpDown1.AutoSize = true;
             this.numericUpDown1.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::Puppet3.Properties.Settings.Default, "PictureScale", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.numericUpDown1.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.numericUpDown1.Location = new System.Drawing.Point(5, 30);
+            this.numericUpDown1.Location = new System.Drawing.Point(5, 33);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             200,
             0,
@@ -211,7 +211,7 @@
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 19);
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown1.TabIndex = 18;
             this.numericUpDown1.TabStop = false;
             this.numericUpDown1.Value = global::Puppet3.Properties.Settings.Default.PictureScale;
@@ -219,9 +219,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 15);
+            this.label1.Location = new System.Drawing.Point(6, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 12);
+            this.label1.Size = new System.Drawing.Size(143, 13);
             this.label1.TabIndex = 17;
             this.label1.Text = "画像サイズ倍率（パーセント）";
             // 
@@ -237,9 +237,9 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.progressBar1);
             this.groupBox2.Controls.Add(this.comboBox1);
-            this.groupBox2.Location = new System.Drawing.Point(292, 12);
+            this.groupBox2.Location = new System.Drawing.Point(292, 13);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(279, 280);
+            this.groupBox2.Size = new System.Drawing.Size(279, 303);
             this.groupBox2.TabIndex = 20;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "音声入力";
@@ -247,9 +247,9 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(6, 114);
+            this.radioButton3.Location = new System.Drawing.Point(6, 124);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(146, 16);
+            this.radioButton3.Size = new System.Drawing.Size(140, 17);
             this.radioButton3.TabIndex = 29;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "アプリケーション - Capture";
@@ -259,18 +259,18 @@
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(6, 136);
+            this.comboBox3.Location = new System.Drawing.Point(6, 147);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(260, 20);
+            this.comboBox3.Size = new System.Drawing.Size(260, 21);
             this.comboBox3.TabIndex = 28;
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(6, 66);
+            this.radioButton2.Location = new System.Drawing.Point(6, 72);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(142, 16);
+            this.radioButton2.Size = new System.Drawing.Size(138, 17);
             this.radioButton2.TabIndex = 27;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "アプリケーション - Render";
@@ -280,9 +280,9 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 18);
+            this.radioButton1.Location = new System.Drawing.Point(6, 20);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(83, 16);
+            this.radioButton1.Size = new System.Drawing.Size(85, 17);
             this.radioButton1.TabIndex = 26;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "マイクロフォン";
@@ -292,16 +292,16 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(6, 88);
+            this.comboBox2.Location = new System.Drawing.Point(6, 95);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(260, 20);
+            this.comboBox2.Size = new System.Drawing.Size(260, 21);
             this.comboBox2.TabIndex = 25;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // trackBar3
             // 
             this.trackBar3.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::Puppet3.Properties.Settings.Default, "MicrophoneVolumeLevelThreshold", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.trackBar3.Location = new System.Drawing.Point(6, 229);
+            this.trackBar3.Location = new System.Drawing.Point(6, 248);
             this.trackBar3.Maximum = 100;
             this.trackBar3.Name = "trackBar3";
             this.trackBar3.Size = new System.Drawing.Size(260, 45);
@@ -312,45 +312,45 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 214);
+            this.label6.Location = new System.Drawing.Point(7, 232);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(125, 12);
+            this.label6.Size = new System.Drawing.Size(127, 13);
             this.label6.TabIndex = 23;
             this.label6.Text = "入力感度（敏感～鈍感）";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 173);
+            this.label5.Location = new System.Drawing.Point(7, 187);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 12);
+            this.label5.Size = new System.Drawing.Size(108, 13);
             this.label5.TabIndex = 22;
             this.label5.Text = "入力レベル（現在値）";
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(6, 188);
+            this.progressBar1.Location = new System.Drawing.Point(6, 204);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(260, 23);
+            this.progressBar1.Size = new System.Drawing.Size(260, 25);
             this.progressBar1.TabIndex = 21;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(6, 40);
+            this.comboBox1.Location = new System.Drawing.Point(6, 43);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(260, 20);
+            this.comboBox1.Size = new System.Drawing.Size(260, 21);
             this.comboBox1.TabIndex = 19;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // ConfigForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(584, 301);
+            this.ClientSize = new System.Drawing.Size(584, 326);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.DataBindings.Add(new System.Windows.Forms.Binding("Location", global::Puppet3.Properties.Settings.Default, "ConfigLocation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
