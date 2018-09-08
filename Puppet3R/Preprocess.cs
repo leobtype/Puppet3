@@ -16,6 +16,11 @@ namespace Puppet3
         private void Preprocess()
         {
             this.SuspendLayout();
+            SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+            SetStyle(ControlStyles.AllPaintingInWmPaint, true);
+            SetStyle(ControlStyles.UserPaint, true);
+            SetStyle(ControlStyles.DoubleBuffer, true);
+            SetStyle(ControlStyles.Opaque, true);
             SetTransparency();
             List<Bitmap> currentBitmaps = SetupBitmaps();
             pictureBoxes = CreatePictureBoxes(currentBitmaps);
@@ -55,9 +60,9 @@ namespace Puppet3
             if (Properties.Settings.Default.LocationInitialized == true)
             {
                 Point location = Properties.Settings.Default.Location;
-                if (location.X < Screen.PrimaryScreen.Bounds.Left  ||
+                if (location.X < Screen.PrimaryScreen.Bounds.Left ||
                     location.X > Screen.PrimaryScreen.Bounds.Right ||
-                    location.Y < Screen.PrimaryScreen.Bounds.Top   ||
+                    location.Y < Screen.PrimaryScreen.Bounds.Top ||
                     location.Y > Screen.PrimaryScreen.Bounds.Bottom)
                 {
                     Properties.Settings.Default.LocationInitialized = false;
@@ -97,7 +102,7 @@ namespace Puppet3
             }
             if (currentCustomExists)
             {
-                foreach(string picture in CustomPictures.Current)
+                foreach (string picture in CustomPictures.Current)
                 {
                     currentBitmaps.Add(new Bitmap(picture));
                 }
@@ -117,7 +122,8 @@ namespace Puppet3
             return currentBitmaps;
         }
 
-        private List<PictureBox> CreatePictureBoxes(List<Bitmap> currentBitmaps) {
+        private List<PictureBox> CreatePictureBoxes(List<Bitmap> currentBitmaps)
+        {
             List<PictureBox> pictureBoxes = new List<PictureBox>();
             foreach (Bitmap bitmap in currentBitmaps)
             {
@@ -147,6 +153,13 @@ namespace Puppet3
             pictureBox.TabStop = false;
             pictureBox.Image = bitmap;
             pictureBox.Visible = false;
+        }
+
+        private void ResetPictureBox(PictureBox pictureBox, Bitmap bitmap)
+        {
+            float scale = (float)Properties.Settings.Default.PictureScale / 100.0f;
+            pictureBox.Size = new Size((int)(bitmap.Size.Width * scale), (int)(bitmap.Size.Height * scale));
+            pictureBox.Image = bitmap;
         }
     }
 }

@@ -62,6 +62,7 @@ namespace Puppet3
                     pictureBoxes[i].Size = pictureBoxes[0].Size;
                 }
             }
+            ClientSize = pictureBoxes[0].Size;
             ResumeLayout(false);
         }
 

@@ -16,6 +16,11 @@ namespace Puppet3
         private void Preprocess()
         {
             this.SuspendLayout();
+            SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+            SetStyle(ControlStyles.AllPaintingInWmPaint, true);
+            SetStyle(ControlStyles.UserPaint, true);
+            SetStyle(ControlStyles.DoubleBuffer, true);
+            SetStyle(ControlStyles.Opaque, true);
             SetTransparency();
             List<Bitmap> currentBitmaps = SetupBitmaps();
             pictureBoxes = CreatePictureBoxes(currentBitmaps);
@@ -139,7 +144,7 @@ namespace Puppet3
         {
             float scale = (float)Properties.Settings.Default.PictureScale / 100.0f;
             pictureBox.BackgroundImageLayout = ImageLayout.None;
-            pictureBox.Location = new Point(0, 0);
+            pictureBox.Location = new Point(0, 0); 
             pictureBox.Margin = new Padding(0);
             pictureBox.Size = new Size((int)(bitmap.Size.Width * scale), (int)(bitmap.Size.Height * scale));
             pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -147,6 +152,13 @@ namespace Puppet3
             pictureBox.TabStop = false;
             pictureBox.Image = bitmap;
             pictureBox.Visible = false;
+        }
+
+        private void ResetPictureBox(PictureBox pictureBox, Bitmap bitmap)
+        {
+            float scale = (float)Properties.Settings.Default.PictureScale / 100.0f;
+            pictureBox.Size = new Size((int)(bitmap.Size.Width * scale), (int)(bitmap.Size.Height * scale));
+            pictureBox.Image = bitmap;
         }
     }
 }
