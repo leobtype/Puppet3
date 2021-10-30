@@ -29,6 +29,12 @@
     <Setting Name="MicrophoneVolumeLevelThreshold" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">20</Value>
     </Setting>
+	<Setting Name="MicrophoneVolumeLevelthresholdEmote" Type="System.Int32" Scope="User">
+	  <Value Profile="(Default)">40</Value>
+	</Setting>
+	<Setting Name="IsEmoteEnable" Type="System.Boolean" Scope="User">
+	  <Value Profile="(Default)">True</Value>
+	</Setting>
     <Setting Name="CustomFormLocation" Type="System.Drawing.Point" Scope="User">
       <Value Profile="(Default)">0, 0</Value>
     </Setting>

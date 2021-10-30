@@ -2384,7 +2384,7 @@
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage10.Size = new System.Drawing.Size(449, 497);
             this.tabPage10.TabIndex = 9;
-            this.tabPage10.Text = "Alt+0";
+            this.tabPage10.Text = "表情";
             this.tabPage10.UseVisualStyleBackColor = true;
             // 
             // groupBox60

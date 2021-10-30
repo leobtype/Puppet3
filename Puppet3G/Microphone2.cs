@@ -12,6 +12,7 @@ namespace Puppet3
     {
         public string MicrophoneId { get; set; }
         public int VolumeLevelThreshold { get; set; }
+        public int VolumeLevelthresholdEmote { get; set; }
         private WaveInEvent waveInStream;
 
         public Microphone2()
@@ -34,6 +35,7 @@ namespace Puppet3
             }
             Properties.Settings.Default.MicrophoneDeviceId = MicrophoneId;
             VolumeLevelThreshold = Properties.Settings.Default.MicrophoneVolumeLevelThreshold;
+            VolumeLevelthresholdEmote = Properties.Settings.Default.MicrophoneVolumeLevelthresholdEmote;
             waveInStream = new WaveInEvent();
             waveInStream.WaveFormat = new WaveFormat(44100, 1);
             Start();

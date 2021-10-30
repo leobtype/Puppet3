@@ -12,7 +12,7 @@ namespace Puppet3.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.7.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.10.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -133,6 +133,30 @@ namespace Puppet3.Properties {
             }
             set {
                 this["MicrophoneVolumeLevelThreshold"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("40")]
+        public int MicrophoneVolumeLevelthresholdEmote {
+            get {
+                return ((int)(this["MicrophoneVolumeLevelthresholdEmote"]));
+            }
+            set {
+                this["MicrophoneVolumeLevelthresholdEmote"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool IsEmoteEnable {
+            get {
+                return ((bool)(this["IsEmoteEnable"]));
+            }
+            set {
+                this["IsEmoteEnable"] = value;
             }
         }
         
