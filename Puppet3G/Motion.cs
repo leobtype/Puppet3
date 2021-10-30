@@ -28,6 +28,18 @@ namespace Puppet3
         private void TimerEventProcessor(object obj, EventArgs e)
         {
             if (lastTime.AddMilliseconds((double)config.BlinkDuration) > DateTime.Now) return;
+            if (Properties.Settings.Default.IsEmoteEnable == true)
+            {
+                if (JudgeSound2() == true)
+                {
+                    Alt_Number(new int[] { 36, 37, 38, 39 }, 0, 0);
+                }
+                else
+                {
+                    Alt_Number(new int[] { 0, 1, 2, 3 }, 0, 0);
+                }
+            }
+
             if (Properties.Settings.Default.MouthOpenWhileSound == true)
             {
                 if (JudgeSound() == true)
@@ -108,6 +120,21 @@ namespace Puppet3
             }
         }
 
+        private static bool JudgeSound2()
+        {
+            switch (Properties.Settings.Default.SoundSource)
+            {
+                case "Microphone":
+                    //return (microphone.VolumeLevel > microphone.VolumeLevelThreshold) ? true : false;
+                    return (microphone.GetMicrophoneVolumeLevel() > microphone.VolumeLevelthresholdEmote) ? true : false;
+                case "ApplicationRender":
+                    return ((int)applicationSound.GetApplicationVolumeLevel("Render") > Properties.Settings.Default.MicrophoneVolumeLevelthresholdEmote) ? true : false;
+                case "ApplicationCapture":
+                    return ((int)applicationSound.GetApplicationVolumeLevel("Capture") > Properties.Settings.Default.MicrophoneVolumeLevelthresholdEmote) ? true : false;
+                default:
+                    return false;
+            }
+        }
 
         private void ToggleEyes()
         {

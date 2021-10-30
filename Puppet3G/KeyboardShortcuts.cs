@@ -58,11 +58,6 @@ namespace Puppet3
                 Alt_Number(new int[] { 32, 33, 34, 35 }, 8, 8);
                 return true;
             }
-            if (keyData == (Keys.Alt | Keys.D0))
-            {
-                Alt_Number(new int[] { 36, 37, 38, 39 }, 9, 9);
-                return true;
-            }
             if (keyData == (Keys.Alt | Keys.OemMinus))
             {
                 DrawDefaultMascot();

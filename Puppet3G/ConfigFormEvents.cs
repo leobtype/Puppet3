@@ -19,6 +19,7 @@ namespace Puppet3
             trackBar3.ValueChanged += new EventHandler(TrackBar3_ValueChanged);
             button1.MouseClick += new MouseEventHandler(Button1_MouseClick);
             checkBox2.CheckedChanged += new EventHandler(CheckBox2_CheckedChanged);
+            trackBar4.ValueChanged += new EventHandler(TrackBar4_ValueChanged);
         }
 
         private void CheckBox2_CheckedChanged(object sender, EventArgs e)
@@ -77,6 +78,12 @@ namespace Puppet3
         {
             microphone.VolumeLevelThreshold = trackBar3.Value;
             Properties.Settings.Default.MicrophoneVolumeLevelThreshold = trackBar3.Value;
+        }
+
+        private void TrackBar4_ValueChanged(object sender, EventArgs e)
+        {
+            microphone.VolumeLevelthresholdEmote = trackBar4.Value;
+            Properties.Settings.Default.MicrophoneVolumeLevelthresholdEmote = trackBar4.Value;
         }
 
         private void NumericUpDown1_ValueChanged(Object sender, EventArgs e)
